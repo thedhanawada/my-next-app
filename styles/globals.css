@@ -1,0 +1,14 @@
+/* styles/globals.css */
+
+.page-enter,
+.page-leave {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-enter-active,
+.page-leave-active {
+  opacity: 1;
+  transform: translateY(0);
+}

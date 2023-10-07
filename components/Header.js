@@ -1,13 +1,15 @@
 // components/Header.js
+import Link from 'next/link';
 
 export default function Header() {
     return (
       <header style={styles.header}>
         <nav style={styles.nav}>
+          <Link href="/">Home</Link>
           <a href="#" style={styles.link}>Discover Yourself</a>
           <a href="#" style={styles.link}>Projects</a>
           <a href="#" style={styles.link}>Blog</a>
-          <a href="#" style={styles.link}>License</a>
+          <Link href="/license">License</Link>
         </nav>
       </header>
     );

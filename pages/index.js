@@ -13,13 +13,13 @@ export default function Home() {
       <Header />
 
       <main style={styles.mainContent}>
-        <h1 style={styles.title}>🌍 Hey there! I'm just your average Joe living on this great big planet we call Earth.</h1>
+        <h1 style={styles.title}>🌍 Hello there. Just a simple soul traversing the vast expanse of Earth.</h1>
         <p style={styles.description}>
-          🔧 I tinker with tech, not because I'm Tony Stark, but because:
+          🔧 I dabble in the world of technology, and here's why:
         </p>
         <ul style={styles.list}>
-          <li>1. It's fun! 🎉</li>
-          <li>2. It keeps my fridge stocked. 🍕</li>
+          <li>1. It brings me joy, much like a good book or a serene walk. 📖</li>
+          <li>2. It ensures a warm meal on my table. 🥖</li>
         </ul>
 
         <div style={styles.newsletter}>
@@ -28,7 +28,12 @@ export default function Home() {
           <p>Every week, I promise not to flood your inbox. In fact, I won't send anything at all.</p>
           <p>Drop your email below, for the sheer joy of it.</p>
           <input type="email" placeholder="Your email" style={styles.input} />
-          <button style={styles.button}>Subscribe</button>
+          <button 
+            style={{...styles.button, marginTop: '20px'}} 
+            onClick={() => alert("Thank you for the gesture! But in the spirit of tranquility, there's no actual newsletter. Just a moment to smile and continue with your day.")}
+          >
+            Subscribe
+          </button>
         </div>
       </main>
 

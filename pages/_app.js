@@ -5,9 +5,11 @@ import '../styles/globals.css';
 
 function MyApp({ Component, pageProps, router }) {
   return (
-    <PageTransition>
-      <Component {...pageProps} key={router.route} />
-    </PageTransition>
+    <div className="global-container">
+      <PageTransition>
+        <Component {...pageProps} key={router.route} />
+      </PageTransition>
+    </div>
   );
 }
 

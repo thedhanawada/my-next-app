@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-      <header style={styles.header}>
-        <nav style={styles.nav}>
+<header className="header" style={styles.header}>
+          <nav style={styles.nav}>
           <Link href="/">Home</Link>
           <a href="#" style={styles.link}>Discover Yourself</a>
           <a href="#" style={styles.link}>Projects</a>
@@ -17,14 +17,15 @@ export default function Header() {
   
   const styles = {
     header: {
-      width: '100%',
+      //width: '100%',
       height: '80px',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#FFFFFF',
+      //backgroundColor: '#FFFFFF',
       borderBottom: '2px solid #7F8C8D',
       fontFamily: "'Noto Sans NKo Unjoined', sans-serif",
+      marginBottom: '20px',
     },
     nav: {
       display: 'flex',

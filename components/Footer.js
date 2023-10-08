@@ -1,21 +1,7 @@
 // components/Footer.js
 
-import { useState, useEffect } from 'react';
-
 export default function Footer() {
-  const [date, setDate] = useState(null);
-
-  useEffect(() => {
-    setDate(new Date());
-
-    const timer = setInterval(() => {
-      setDate(new Date());
-    }, 60000); 
-
-    return () => clearInterval(timer); 
-  }, []);
-
-  if (!date) return null; 
+  const date = new Date();
 
   return (
     <footer style={styles.footer}>

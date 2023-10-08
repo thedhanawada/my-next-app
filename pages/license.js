@@ -65,6 +65,11 @@ const tools = [
         link: 'https://www.mozilla.org/en-US/firefox/',
         description: 'A free and open-source web browser developed by Mozilla.',
       },
+      {
+        name: 'Google Fonts - Noto Sans N\'Ko Unjoined',
+        link: 'https://fonts.google.com/specimen/Noto+Sans+N%27Ko+Unjoined',
+        description: 'A typeface family designed by Google to support a wide variety of scripts and languages.',
+      },
       ];
   
 const styles = {
